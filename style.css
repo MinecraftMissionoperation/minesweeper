@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f0f0f0;
+  margin: 10px;
+}
+
+h1 {
+  margin-bottom: 5px;
+}
+
+#controls {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#gameBoard {
+  display: inline-block;
+  border: 2px solid #666;
+  background: #ddd;
+  user-select: none;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #999;
+  display: inline-block;
+  line-height: 30px;
+  vertical-align: top;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  background: #bbb;
+}
+
+.cell.revealed {
+  background: #eee;
+  cursor: default;
+  border: 1px solid #999;
+}
+
+.cell.mine {
+  background: red;
+  color: black;
+}
+
+.cell.flagged {
+  background: #ff0;
+  color: black;
+}
+
+.number1 { color: blue; }
+.number2 { color: green; }
+.number3 { color: red; }
+.number4 { color: darkblue; }
+.number5 { color: darkred; }
+.number6 { color: cyan; }
+.number7 { color: black; }
+.number8 { color: gray; }
